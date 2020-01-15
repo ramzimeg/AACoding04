@@ -1,5 +1,3 @@
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -9,26 +7,38 @@
 <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
 <title>CodePen - AACoding04-6</title>
 <style>
+body {
+  color: red;
+}
+body {
+  background-color: rgba( 225, 0, 225,.4);
+}
 .correct{
-  background:green;
+  background: rgba( 0, 225, 0, .75);
 }
 
 .incorrect{
-  background:red;
+  background: rgba( 225, 0, 0, .75 );
+}
+ol{
+  color: blue;
+  background: white;
+  width: 250px;
+  border-style: solid;
 }
 </style>
 </head>
 <body translate="no">
 <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-<audio id="sad" controls>
+<audio id="sad">
 <source src="https://math.seattleacademy.org/garyanderson/snd/sad.mp3" type="audio/mpeg">
 Your browser does not support the audio tag
 </audio>
-<h1>Ramzi's Awesome Math Problems</h1>
-<ol>
+<h1>Ramzi's Really Cool Math Problems</h1>
 <div>Timer: <span id="theTime">0</span> Score: <span id="score">0</span></div>
 <ol>
+<h2> Questions </h2>
 <li>\( 2^3 \) <input data-correct="8" /> </li>
 <li>\( \sqrt[3]{8} \) <input data-correct="2" /></li>
 <li>\( 8^\frac{1}{3} \) <input data-correct="2" /></li>
@@ -78,3 +88,4 @@ function onChange(evt) {
     </script>
 </body>
 </html>
+
