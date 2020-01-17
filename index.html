@@ -39,6 +39,7 @@ Your browser does not support the audio tag
 </audio>
 <h1>Ramzi's Really Cool Math Problems</h1>
 <div>Timer: <span id="theTime">0</span> Score: <span id="score">0</span></div>
+<div><progress value="0" max="10" id="myProgress"></progress></div>
 <ol>
 <h2> Questions </h2>
 <li>\( 2^3 \) <input data-correct="8" /> </li>
@@ -76,6 +77,7 @@ function onChange(evt) {
     let theScore = Number($("#score").text());
     theScore = theScore + 1;
     $("#score").text(theScore);
+    document.getElementById("myProgress").value = theScore;
   } else {
     if (Math.random() > 0.1) {
       sad.play();
